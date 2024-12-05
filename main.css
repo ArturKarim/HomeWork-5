@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  position: fixed;
+  background-color: blue;
+  height: 90px;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  height: 850px;
+  width: 100%;
+}
+.table {
+  width: 100%;
+}
+.footer {
+  display: flex;
+  margin-top: auto;
+  background-color: blue;
+  height: 90px;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  width: 100%;
+}
+.footer-content {
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+}
