@@ -18,12 +18,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1400px;
 }
 .table {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   border: 5px solid black;
   border-radius: 25px;
   height: 300px;
@@ -31,6 +31,13 @@ body {
   font: 50px Arial, Helvetica, sans-serif;
   text-align: center;
   font-weight: bold;
+}
+.text-colose {
+  position: absolute;
+  width: 45px;
+  height: 116px;
+  border: 10px solid red;
+  border-radius: 50px;
 }
 .footer {
   display: flex;
