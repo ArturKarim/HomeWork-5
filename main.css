@@ -34,10 +34,12 @@ body {
 }
 .text-colose {
   position: absolute;
+  top: 140px;
   width: 45px;
   height: 116px;
   border: 10px solid red;
   border-radius: 50px;
+  font-size: 96px;
 }
 .footer {
   display: flex;
