@@ -16,10 +16,24 @@ body {
 .content {
   flex-grow: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  overflow-y: scroll;
 }
-.table {
+/* .content {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: start;
+} */
+
+.card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,14 +46,38 @@ body {
   text-align: center;
   font-weight: bold;
 }
-.text-colose {
+
+.text-close {
   position: absolute;
-  top: 140px;
-  width: 45px;
-  height: 116px;
-  border: 10px solid red;
-  border-radius: 50px;
-  font-size: 96px;
+  top: -25px;
+  right: -25px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
+}
+.empty-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 600px;
+  font: 75px Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+.plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
 }
 .footer {
   display: flex;
@@ -56,4 +94,27 @@ body {
 
   justify-content: space-between;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .card {
+    border-radius: 0;
+    font-size: 45px;
+  }
+  .text-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border-radius: 0;
+    top: -5px;
+    right: -5px;
+  }
+  .empty-card {
+    height: 60px;
+  }
+  .plus {
+    width: 600px;
+    height: 60px;
+    border-radius: 0;
+  }
 }
